@@ -1,0 +1,149 @@
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal del documento */
+    background-color: #000000; /* Establece el fondo negro para la página */
+    color: #14171a; /* Define el color del texto principal */
+    margin: 0; /* Elimina el margen predeterminado alrededor del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado alrededor del cuerpo */
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor */
+    align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+}
+
+.left-section {
+    flex: 1; /* Ocupa una parte del espacio del contenedor (igual que la derecha) */
+    display: flex; /* Usa flexbox para alinear el contenido internamente */
+    justify-content: center; /* Centra horizontalmente el contenido dentro de esta sección */
+    align-items: center; /* Centra verticalmente el contenido dentro de esta sección */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    background-color: #000000; /* Establece el fondo negro para esta sección */
+}
+
+.left-section img {
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.right-section {
+    flex: 1; /* Ocupa una parte del espacio del contenedor (igual que la izquierda) */
+    padding: 50px; /* Añade espacio alrededor del contenido */
+}
+
+h1 {
+    color: #f0f0f0; /* Establece el color del texto blanco */
+    margin-bottom: 20px; /* Añade espacio debajo del encabezado */
+    font-family: Arial Black; /* Establece la fuente Arial Black */
+    text-align: justify; /* Alinea el texto de forma justificada */
+    font-weight: normal; /* Establece el peso de la fuente como normal */
+    font-size: 50px; /* Establece el tamaño de la fuente en 50 píxeles */
+}
+
+h5 {
+    color: #ffffff; /* Establece el color del texto blanco */
+    font-size: 11px; /* Establece el tamaño de la fuente en 10 píxeles */
+}
+
+h2 {
+    font-family: Impact Black; /* Establece la fuente Impact Black */
+    font-weight: normal; /* Establece el peso de la fuente como normal */
+    color: #ffffff; /* Establece el color del texto blanco */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+h3 {
+    font-family: Arial Black; /* Establece la fuente Arial Black */
+    text-align: justify; /* Alinea el texto de forma justificada */
+    font-weight: normal; /* Establece el peso de la fuente como normal */
+    color: #ffffff; /* Establece el color del texto blanco */
+    font-size: 30px; /* Establece el tamaño de la fuente en 30 píxeles */
+}
+
+label {
+    display: block; /* Hace que cada etiqueta ocupe una línea completa */
+    margin-bottom: 5px; /* Añade espacio debajo de la etiqueta */
+    font-weight: bold; /* Establece el texto en negrita */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #ffffff; /* Establece el color del texto blanco */
+}
+
+.button-b{
+    width: 90%;/* Establece el ancho al 90% del contenedor */
+    padding: 10px; /* Añade espacio dentro del cuadro */
+    margin-bottom: 15px; /* Añade espacio debajo del cuadro */
+    border: 1px solid #ffffff; /* Establece un borde blanco de 1 píxel */
+    border-radius: 4px; /* Bordes redondeados de 4 píxeles */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+}
+
+
+input[type="submit"] {
+    width: 30%; /* Establece el ancho al 40% del contenedor */
+    padding: 15px; /* Añade espacio dentro del botón */
+    background-color: #1da1f2; /* Establece el fondo azul */
+    color: #fff; /* Establece el color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados de 20 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+    margin-top: 15px; /* Añade espacio encima del botón */
+}
+
+input[type="submit"]:hover {
+    background-color: #0d8ddb; /* Cambia el fondo a azul oscuro al pasar sobre el botón */
+}
+
+p {
+    margin-top: 20px; /* Añade espacio encima del párrafo */
+    color: #fff; /* Establece el color del texto blanco */
+}
+
+a {
+    color: #1da1f2; /* Establece el color del enlace azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar sobre él */
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculta el modal inicialmente */
+    position: fixed; /* Fija el modal en una posición */
+    z-index: 1; /* Coloca el modal por encima del contenido normal */
+    left: 0; /* Alinea el modal al borde izquierdo */
+    top: 0; /* Alinea el modal al borde superior */
+    width: 100%; /* Establece el ancho del modal al 100% del viewport */
+    height: 100%; /* Establece la altura del modal al 100% del viewport */
+    overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0,0,0,0.4); /* Fondo negro semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Establece el fondo blanco para el contenido del modal */
+    margin: 15% auto; /* Centra el modal verticalmente con un margen superior del 15% */
+    padding: 20px; /* Añade espacio dentro del modal */
+    border: 1px solid #888; /* Borde gris claro de 1 píxel */
+    width: 50%; /* Establece el ancho del modal al 50% del viewport */
+    text-align: center; /* Alinea el texto al centro */
+    border-radius: 10px; /* Bordes redondeados de 10 píxeles */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para el modal */
+}
+
+.close {
+    color: #aaa; /* Establece el color gris claro para el botón de cerrar */
+    float: right; /* Alinea el botón de cerrar a la derecha */
+    font-size: 28px; /* Establece el tamaño de la fuente en 28 píxeles */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambia el color a negro al pasar sobre el botón o enfocarlo */
+    text-decoration: none; /* Elimina cualquier subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}

@@ -1,0 +1,267 @@
+/* Reset básico */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Cambia el box-sizing a border-box para todos los elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal del documento */
+    background-color: #000000; /* Establece el fondo negro para la página */
+    color: #ffffff; /* Establece el color del texto principal en blanco */
+}
+
+.container {
+    max-width: 700px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor horizontalmente y añade un margen vertical de 20px */
+    background-color: #202020; /* Establece el fondo gris oscuro para el contenedor */
+    padding: 30px; /* Añade espacio interno al contenedor */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    box-shadow: 0 0 10px rgba(255, 248, 248, 0.1); /* Añade una sombra ligera al contenedor */
+}
+
+p, h3 {
+    color: #ffffff; /* Establece el color del texto en blanco para párrafos y encabezados h3 */
+}
+
+.tweet-form textarea,
+.comment-form textarea {
+    font-family: Arial, Helvetica, sans-serif; /*Cambia el tipo de letra*/
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Añade espacio interno */
+    font-size: 16px; /* Establece el tamaño de la fuente */
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+.tweet-form input[type="submit"] {
+    margin-right: 80%; /* Añade un margen derecho del 80% del contenedor */
+    margin-top: 10px; /* Añade un margen superior de 10px */
+    background-color: #1da1f2; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 7px 15px; /* Añade espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados de 15px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 14px; /* Establece el tamaño de la fuente */
+}
+
+.tweet-form input[type="submit"]:hover {
+    background-color: #1a91da; /* Cambia el color de fondo al pasar el puntero del mouse */
+}
+
+.tweet-list {
+    border-top: 1px solid #ccc; /* Añade un borde superior gris claro */
+    margin-top: 20px; /* Añade un margen superior de 20px */
+    position: relative; /* Posiciona el contenedor relativamente */
+}
+
+.tweet {
+    padding: 10px; /* Añade espacio interno */
+    border-bottom: 1px solid #ffffff; /* Añade un borde inferior blanco */
+}
+
+.tweet-header {
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+}
+
+.tweet-header img {
+    width: 50px; /* Ancho de la imagen de 50px */
+    height: 50px; /* Altura de la imagen de 50px */
+    border-radius: 50%; /* Bordes redondeados para hacer la imagen circular */
+    margin-right: 10px; /* Añade un margen derecho de 10px */
+}
+
+.user-info h3 {
+    margin-bottom: 5px; /* Añade un margen inferior de 5px */
+    font-size: 18px; /* Establece el tamaño de la fuente */
+}
+
+.user-info p {
+    color: #666; /* Establece el color del texto en gris */
+}
+
+.tweet-content {
+    margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+.tweet-content img {
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+.tweet-actions {
+    margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+.tweet-actions button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    margin-right: 10px; /* Añade un margen derecho de 10px */
+}
+
+.tweet-actions .delete-btn {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    margin-right: 10px; /* Añade un margen derecho de 10px */
+    margin-left: 88%; /* Mueve el botón hacia la derecha */
+}
+
+.tweet-actions button:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el puntero del mouse */
+    color: rgb(255, 0, 0); /* Cambia el color del texto a rojo */
+}
+
+.comment-btn {
+    color: #1da1f2; /* Color azul de Twitter */
+}
+
+.sidebar {
+    width: 250px; /* Ancho fijo de la barra lateral */
+    background-color: #000000; /* Fondo negro */
+    padding: 30px; /* Añade espacio interno */
+    position: fixed; /* Posiciona la barra lateral fija */
+    height: 100%; /* Altura completa del viewport */
+    overflow: auto; /* Permite el scroll si el contenido es demasiado grande */
+}
+
+.sidebar a {
+    display: block; /* Hace que cada enlace ocupe una línea completa */
+    padding: 10px 0; /* Añade espacio interno */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff6f6; /* Color del texto blanco */
+}
+
+.sidebar a:hover {
+    color: #1f8ce6; ;/* Cambia el fondo a rojo al pasar el puntero del mouse */
+}
+
+.sidebar img {
+    display: block; /* Hace que la imagen sea un bloque para respetar el margen automático */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
+
+.logout-btn {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrado del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor de mano */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f; /* Color de fondo al pasar el puntero */
+}
+
+.logout-btn i {
+    margin-right: 8px; /* Espaciado a la derecha del icono */
+}
+
+.comments-section {
+    margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+.comments-section p {
+    margin: 5px 0; /* Añade un margen vertical de 5px */
+}
+
+.comments-section .comment-form {
+    margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+.comments-section .comment-form textarea {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Añade espacio interno */
+    font-size: 16px; /* Establece el tamaño de la fuente */
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+.comments-section .comment-form input[type="submit"] {
+    margin-top: 10px; /* Añade un margen superior de 10px */
+    background-color: #1da1f2; /* Color azul de Twitter */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    padding: 10px 20px; /* Añade espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados de 4px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.comments-section .comment-form input[type="submit"]:hover {
+    background-color: #1a91da; /* Cambia el color de fondo al pasar el puntero del mouse */
+}
+
+.right-sidebar {
+    position: fixed; /* Posiciona la barra lateral fija */
+    top: 0; /* Alinea la barra lateral al borde superior */
+    right: 0; /* Alinea la barra lateral al borde derecho */
+    width: 300px; /* Ancho fijo de la barra lateral */
+    height: 100%; /* Altura completa del viewport */
+    background-color: #000000; /* Fondo negro */
+    padding: 20px; /* Añade espacio interno */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Añade una sombra al borde izquierdo */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    overflow-y: auto; /* Permite el scroll vertical si el contenido es demasiado grande */
+}
+
+.search-bar {
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
+
+.search-bar input {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Añade espacio interno */
+    font-size: 16px; /* Establece el tamaño de la fuente */
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    border-radius: 15px; /* Bordes redondeados de 15px */
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+.premium-box, .trending-box {
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+    background-color: #282828; /* Fondo gris oscuro */
+    padding: 20px; /* Añade espacio interno */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+}
+
+.premium-box h3, .trending-box h3 {
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+}
+
+.premium-box button.subscribe-btn {
+    display: block; /* Hace que el botón ocupe una línea completa */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Añade espacio interno */
+    background-color: #1da1f2; /* Color azul de Twitter */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados de 25px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 16px; /* Establece el tamaño de la fuente */
+}
+
+.premium-box button.subscribe-btn:hover {
+    background-color: #1a91da; /* Cambia el color de fondo al pasar el puntero del mouse */
+}

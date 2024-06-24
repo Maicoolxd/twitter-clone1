@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal del documento */
+    background-color: #000; /* Establece el fondo negro para la página */
+    color: #fff; /* Define el color del texto principal como blanco */
+    margin: 0; /* Elimina el margen predeterminado alrededor del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado alrededor del cuerpo */
+    display: flex; /* Usa flexbox para el diseño del contenedor */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor */
+    align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+    background-image: url('imagenes/x2.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+}
+
+.container {
+    position: relative; /* Permite posicionar elementos absolutamente dentro del contenedor */
+    width: 400px; /* Ancho fijo del contenedor */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados de 8 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del contenedor */
+    padding: 20px; /* Añade espacio dentro del contenedor */
+    margin-top: 50px; /* Añade un margen superior de 50 píxeles */
+}
+
+/* Estilos para el icono de cierre */
+.close-icon {
+    position: absolute; /* Posiciona el icono de forma absoluta dentro del contenedor */
+    top: 10px; /* Alinea el icono a 10 píxeles desde la parte superior */
+    right: 10px; /* Alinea el icono a 10 píxeles desde la derecha */
+    text-decoration: none; /* Elimina cualquier subrayado del icono */
+    font-size: 24px; /* Establece el tamaño de la fuente en 24 píxeles */
+    color: #333; /* Establece el color del icono en gris oscuro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+
+.close-icon:hover {
+    color: #f00; /* Cambia el color a rojo al pasar el puntero del mouse */
+}
+
+.close-icon:active {
+    color: #d00; /* Cambia el color a rojo oscuro al presionar */
+}
+
+h1 {
+    font-size: 24px; /* Establece el tamaño de la fuente en 24 píxeles */
+    text-align: center; /* Alinea el texto al centro */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    color: #000000; /* Establece el color del texto en negro */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Añade un margen inferior de 15 píxeles */
+}
+
+label {
+    display: block; /* Hace que cada etiqueta ocupe una línea completa */
+    margin-bottom: 5px; /* Añade un margen inferior de 5 píxeles */
+    font-weight: bold; /* Establece el texto en negrita */
+    color: #333; /* Establece el color del texto en gris oscuro */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ancho calculado restando 20 píxeles del contenedor */
+    padding: 10px; /* Añade espacio dentro del cuadro */
+    margin-bottom: 10px; /* Añade un margen inferior de 10 píxeles */
+    border: 1px solid #ccc; /* Borde gris claro de 1 píxel */
+    border-radius: 4px; /* Bordes redondeados de 4 píxeles */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+}
+
+input[type="submit"] {
+    width: 100%; /* Ancho del 100% del contenedor */
+    padding: 12px; /* Añade espacio dentro del botón */
+    background-color: #009dff; /* Establece el fondo negro */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 40px; /* Bordes redondeados de 40 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+}
+
+input[type="submit"]:hover {
+    background-color: #1da1f2; /* Cambia el fondo a gris oscuro al pasar el puntero del mouse */
+}
+
+.modal {
+    display: none; /* La ventana modal estará oculta inicialmente */
+    position: fixed; /* Fija la ventana modal en una posición */
+    z-index: 1; /* Hace que la ventana modal esté por encima de todo el contenido */
+    left: 0; /* Alinea la ventana modal al borde izquierdo */
+    top: 0; /* Alinea la ventana modal al borde superior */
+    width: 100%; /* Establece el ancho de la ventana modal al 100% del viewport */
+    height: 100%; /* Establece la altura de la ventana modal al 100% del viewport */
+    background-color: rgba(65, 62, 62, 0.5); /* Fondo semi-transparente para oscurecer el fondo */
+    overflow: auto; /* Permite hacer scroll si la ventana modal es demasiado larga */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Establece el fondo blanco para el contenido del modal */
+    margin: 15% auto; /* Centra la ventana modal verticalmente y la separa del borde superior */
+    padding: 20px; /* Añade espacio dentro del modal */
+    border: 1px solid #888; /* Borde gris claro de 1 píxel */
+    width: 20%; /* Ancho más estrecho del modal */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra alrededor del modal */
+    border-radius: 10px; /* Bordes redondeados de 10 píxeles */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.close {
+    color: #aaa; /* Establece el color gris claro para el botón de cerrar */
+    float: right; /* Alinea el botón de cerrar a la derecha */
+    font-size: 28px; /* Establece el tamaño de la fuente en 28 píxeles */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambia el color a negro al pasar sobre el botón o enfocarlo */
+    text-decoration: none; /* Elimina cualquier subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.modal-content p {
+    font-size: 18px; /* Establece el tamaño de la fuente en 18 píxeles */
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles */
+    color: #333; /* Establece el color del texto en gris oscuro */
+}
+
+.modal-content button {
+    padding: 10px 20px; /* Añade espacio dentro del botón */
+    background-color: #009dff; /* Establece el fondo del botón en gris oscuro */
+    color: rgb(253, 253, 253); /* Establece el color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados de 20 píxeles */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+}
+
+.modal-content button:hover {
+    background-color: #4bb7fa; /* Cambia el fondo a gris oscuro al pasar el puntero del mouse */
+}
